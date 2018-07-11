@@ -1,4 +1,4 @@
-from sorting.utils import print_data
+from sorting.utils import print_tests
 import random
 
 
@@ -19,4 +19,4 @@ class QuickSort:
 
 
 if __name__ == '__main__':
-    print_data(QuickSort)
+    print_tests(QuickSort)

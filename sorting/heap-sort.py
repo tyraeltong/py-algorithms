@@ -1,4 +1,4 @@
-from sorting.utils import print_data
+from sorting.utils import print_tests
 
 
 class HeapSort:
@@ -37,4 +37,4 @@ class HeapSort:
 
 
 if __name__ == '__main__':
-    print_data(HeapSort)
+    print_tests(HeapSort)

@@ -1,4 +1,4 @@
-from sorting.utils import print_data
+from sorting.utils import print_tests
 
 
 class CountingSort:
@@ -20,21 +20,22 @@ class CountingSort:
 
         # find out the max number in data
         max_num = max(data)
-        aux = [0] * (max_num + 1)
+        min_num = min(data)
+        aux = [0] * (max_num - min_num + 1)
 
         for i in range(len(data)):
-            aux_idx = data[i]
+            aux_idx = data[i] - min_num
             aux[aux_idx] += 1
 
         k = 0
         for j in range(len(aux)):
             if aux[j] > 0:
                 for _ in range(aux[j]):
-                    data[k] = j
+                    data[k] = j + min_num
                     k += 1
 
         return data
 
 
 if __name__ == '__main__':
-    print_data(CountingSort)
+    print_tests(CountingSort)

@@ -1,4 +1,4 @@
-from sorting.utils import print_data
+from sorting.utils import print_tests
 
 
 class BubbleSort:
@@ -27,4 +27,4 @@ class BubbleSort:
 
 
 if __name__ == "__main__":
-    print_data(BubbleSort)
+    print_tests(BubbleSort)

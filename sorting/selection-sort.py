@@ -1,4 +1,4 @@
-from sorting.utils import print_data
+from sorting.utils import print_tests
 
 
 class SelectionSort:
@@ -27,4 +27,4 @@ class SelectionSort:
 
 
 if __name__ == '__main__':
-    print_data(SelectionSort)
+    print_tests(SelectionSort)

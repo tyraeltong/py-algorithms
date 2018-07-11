@@ -1,4 +1,4 @@
-from sorting.utils import print_data
+from sorting.utils import print_tests
 
 
 class MergeSort:
@@ -42,4 +42,4 @@ class MergeSort:
 
 
 if __name__ == '__main__':
-    print_data(MergeSort)
+    print_tests(MergeSort)

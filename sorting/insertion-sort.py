@@ -1,4 +1,4 @@
-from sorting.utils import print_data
+from sorting.utils import print_tests
 
 
 class InsertionSort:
@@ -19,4 +19,4 @@ class InsertionSort:
 
 
 if __name__ == '__main__':
-    print_data(InsertionSort)
+    print_tests(InsertionSort)
