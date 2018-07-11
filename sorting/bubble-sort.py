@@ -2,6 +2,14 @@ from sorting.utils import print_data
 
 
 class BubbleSort:
+    """
+    Time complexity:
+        - worst case: O(nˆ2)
+        - best case: O(n)
+        - average case: O(nˆ2)
+    Space complexity:
+        - O(1)
+    """
     @staticmethod
     def sort(data):
         if data is None:

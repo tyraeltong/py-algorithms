@@ -2,6 +2,14 @@ from sorting.utils import print_data
 
 
 class CountingSort:
+    """
+    Time complexity:
+        - worst case: O(n+k)
+        - best case: O(n+k)
+        - average case: O(n+k)
+    Space complexity:
+        - worst case: O(k)
+    """
     @staticmethod
     def sort(data) -> list:
         if data is None:
@@ -10,18 +18,22 @@ class CountingSort:
         if len(data) < 2:
             return data
 
-        votes = [0] * len(data)
-        buckets = [0] * len(data)
+        # find out the max number in data
+        max_num = max(data)
+        aux = [0] * (max_num + 1)
 
         for i in range(len(data)):
-            for j in range(len(data)):
-                if data[i] >= data[j]:
-                    votes[i] += 1
+            aux_idx = data[i]
+            aux[aux_idx] += 1
 
-        for i in range(len(data)):
-            buckets[votes[i]-1] = data[i]
+        k = 0
+        for j in range(len(aux)):
+            if aux[j] > 0:
+                for _ in range(aux[j]):
+                    data[k] = j
+                    k += 1
 
-        return buckets
+        return data
 
 
 if __name__ == '__main__':
