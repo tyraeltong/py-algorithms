@@ -12,7 +12,7 @@ class InsertionSort:
 
         for i in range(1, len(data)):
             for j in range(i):
-                if data[j] < data[i]:
+                if data[j] > data[i]:
                     data[j], data[i] = data[i], data[j]
 
         return data
