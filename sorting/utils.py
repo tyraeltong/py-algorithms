@@ -7,6 +7,9 @@ def print_tests(sorting):
     d = [i for i in reversed(range(-20, 10))]
     _print(d, sorting.sort(d.copy()))
 
+    d = [-10, -9, -9, 10, 8, 7, 11, 3, 0]
+    _print(d, sorting.sort(d.copy()))
+
 
 def _print(data, result):
     print('data to sort:')
