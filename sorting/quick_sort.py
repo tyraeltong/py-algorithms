@@ -3,6 +3,14 @@ import random
 
 
 class QuickSort:
+    """
+    Time complexity:
+        - Worst case: O(nˆ2)
+        - Best case: O(nlogn)
+        - Average case: O(nlogn)
+    Space complexity:
+        - O(logn)
+    """
     @staticmethod
     def sort(data):
         if data is None:

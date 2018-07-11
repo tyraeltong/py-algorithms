@@ -9,6 +9,12 @@ class CountingSort:
         - average case: O(n+k)
     Space complexity:
         - worst case: O(k)
+
+    Ideal usage scenario:
+        - data is made up of integers or can be mapped to integers
+        - the range of the data is known
+        - most of the data in the range are presented
+        - additional memory usage is not an issue
     """
     @staticmethod
     def sort(data) -> list:

@@ -2,13 +2,26 @@ from sorting.utils import print_tests
 
 
 class SelectionSort:
+    """
+    Time complexity:
+        - Worst case: O(nˆ2)
+        - Best case: O(nˆ2)
+        - Average case: O(nˆ2)
+    Space complexity:
+        - O(1)
+    """
     @staticmethod
     def sort(data):
-        result = []
-        for _ in range(len(data)):
-            min_idx = SelectionSort._find_min_idx(data)
-            result.append(data.pop(min_idx))
-        return result
+        if data is None:
+            raise TypeError("data should not be None.")
+
+        if len(data) < 2:
+            return data
+
+        for i in range(len(data) - 1):
+            min_idx = SelectionSort._find_min_idx(data[i:])
+            data[i], data[min_idx+i] = data[min_idx+i], data[i]
+        return data
 
     @staticmethod
     def _find_min_idx(items):

@@ -2,6 +2,14 @@ from sorting.utils import print_tests
 
 
 class MergeSort:
+    """
+    Time complexity:
+        - Worst case: O(nlogn)
+        - Best case: O(nlogn)
+        - Average case: O(nlogn)
+    Space complexity:
+        - O(n)
+    """
     @staticmethod
     def sort(data):
         if data is None:

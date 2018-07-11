@@ -2,6 +2,14 @@ from sorting.utils import print_tests
 
 
 class InsertionSort:
+    """
+    Time complexity:
+        - Worst case: O(nˆ2)
+        - Best case: O(n)
+        - Average case: O(nˆ2)
+    Space complexity:
+        - O(1)
+    """
     @staticmethod
     def sort(data):
         if data is None:

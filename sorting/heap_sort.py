@@ -2,6 +2,14 @@ from sorting.utils import print_tests
 
 
 class HeapSort:
+    """
+    Time complexity:
+        - Worst case: O(nlogn)
+        - Best case: O(nlogn)
+        - Average case: O(nlogn)
+    Space complexity:
+        - O(1)
+    """
     @staticmethod
     def sort(data):
         HeapSort._heapify(data, len(data))
